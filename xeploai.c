@@ -3,6 +3,8 @@
 main()
 {
 	int dasm , lythuyet, thuchanh;
+	char luachon;
+do{
 	printf("moi nhap so diem thung phan : \n");
 	printf("diem ly thuyet: ");
 	scanf("%d",&lythuyet);
@@ -13,15 +15,20 @@ main()
 
     switch(xeploai(lythuyet,thuchanh,dasm))
 	{
-		case 0: printf("xep loai truot");
+		case 0: printf("xep loai truot\n");
 			break;
-		case 1: printf("xep loai do");
+		case 1: printf("xep loai do\n");
 		    break;
-		case 2: printf("xep loai kha");
+		case 2: printf("xep loai kha\n");
 			break;
-		case 3: printf("xep loai gioi");
+		case 3: printf("xep loai gioi\n");
 			break;	
 	}
+	printf("ban co muon tiep tuc khong? (y/n)");
+	scanf("%c",&luachon);
+	}
+	while(luachon=='y');
+	
 	
 
 	
